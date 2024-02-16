@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+
+{% block title %}
+
+{% endblock title %}
+
+
+
+{% block content %}
+
+<form action="" method="POST" class="w-50 m-auto border p-3 mt-5">
+  {% csrf_token %}
+{{form.as_p}}
+<input type="submit" class="btn btn-primary" value="kayıt ol">
+
+</form>
+
+{% endblock content %}

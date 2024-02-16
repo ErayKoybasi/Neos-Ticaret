@@ -1,0 +1,21 @@
+
+
+{% extends "index.html" %} {% block content %}
+
+{% block title %}<title>Detail : {{product.name}} </title> {% endblock title %}
+
+
+
+
+<div class="row">
+  <div class="col-md-4">
+    <img src="{{product.image.url}}" width="100%" />
+  </div>
+  <div class="col-md-8">
+    <h2>{{product.name}}</h2>
+    <p>Ürün Açıklaması : {{product.content|safe}}</p>
+    <p>Ürün Fiyatı : {{product.price}}</p>
+  </div>
+</div>
+
+{% endblock content %}
